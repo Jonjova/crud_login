@@ -44,5 +44,11 @@ class maestro_tipo_pago_model extends CI_Model
         
 
     }
+
+    public function eliminarTipoPago($idtipopago)
+    {
+        $this->db->where('idtipopago=',$idtipopago);
+        $this->db->delete('maestro_tipo_pago');
+    }
 }
 ?>
