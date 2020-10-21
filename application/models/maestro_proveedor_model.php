@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class maestro_proveedor_model extends CI_Model
 {
-  public function mostarProveedor()
+  public function mostrarProveedor()
   {
       $this->db->order_by('idproveedor');
       $query = $this->db->get('maestro_proveedor');
