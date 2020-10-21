@@ -17,7 +17,7 @@ class maestro_proveedor_model extends CI_Model
     return $query->row();
   }
 
-  public function insertarProovedor($maestro_proveedor)
+  public function insertarProveedor($maestro_proveedor)
   {
     if ($this->db->insert('maestro_proveedor',$maestro_proveedor)) {
         # code...
