@@ -27,7 +27,6 @@ class maestro_producto extends CI_Controller
 			$data['pro'] = $this->mpm->traerProducto($id_codigo);
 			$pro = $this->mpm->traerProducto($id_codigo);
 			if (isset($data['pro']) || isset($pro)) {
-				/*$data['idmascota'] = '<p><input type="hidden" name="idmascota" value="'.$this->uri->segment(3).'"></p>';*/
 				$data['accion'] = 'actualizar';
 
 			}else{
